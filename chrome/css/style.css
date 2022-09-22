@@ -1,0 +1,161 @@
+/*https://support.apple.com/ko-kr/HT208721 */
+/* 맥북 화면 참고 */
+
+body{
+    margin: 0;
+    padding: 0;
+    float:left;
+    height: 100vh;
+    width: 100%;
+    height: auto;
+}
+
+header{
+    margin: 0;
+    border: 4px;
+    float: left;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(206, 206, 206, 0.8) ;
+    overflow: hidden;
+}
+
+.hidden{
+    display : none;
+}
+
+#bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:55%;
+    pointer-events: none;
+}
+
+#login-form{
+    position: relative;
+}
+
+#greeting{
+    position: relative;
+    margin: 0 5px;
+    left: 15px;
+    padding: 0;
+    font-size : 18px;
+    color : black;
+    float:left;
+}
+
+#weather{
+    position: relative;
+    float:right;
+    margin: 4px 0;
+    right: 30px;
+    font-size:15px;
+    opacity : 0.7;
+}
+
+#clock{
+    position: relative;
+    margin:0 0 0 5px;
+    right: 20px;
+    float:right;
+    text-align:center;
+    font-size:18px;
+}
+
+.todo{
+    list-style: none;
+    padding:0;
+}
+
+#todo-container{
+    position: relative;
+    background-color: #E2E2E2;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+}
+
+/**이제부터 todo 하나의 아이콘에 넣기 **/
+
+.todo span{
+    margin-left: 25px;
+}
+
+
+#todo-form input{
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px 15px;
+    background-color: rgb(233, 233, 233)
+}
+
+#quote{
+    color : rgb(53, 51, 51);
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    border : 0;
+    margin: 0;
+    padding: 0;
+    min-width : 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size:cover;
+    opacity : 0.4;
+}
+
+footer{
+    position: absolute;
+    width:100%;
+    bottom: 3px;    
+    text-align:center;
+    margin:0;
+}
+
+.board{
+    box-sizing: border-box;
+    width: 80%;
+    left: 10%;
+    background-color: rgb(206, 206, 206, 0.9) ;
+    border-radius:15px;
+    font-size:1em;
+    margin: 5px auto;
+}
+
+.board_list {
+    display: inline-block;
+    text-align: center;
+}
+.board_box {
+    display: inline-block;
+    width:70px;
+    height:70px;
+    margin:5px;
+    font-size:13px;
+}
+.board_box img{
+    width:33px;
+    height:33px;
+    margin:5px;
+    padding-top:5px;
+}
+
+a, a:visited, a:focus, a:active, a:hover {
+    text-decoration: none;
+    color:black
+}
